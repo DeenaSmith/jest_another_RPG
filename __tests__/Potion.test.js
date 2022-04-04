@@ -4,7 +4,7 @@ test('creates a health potion object', () => {
     const potion = new Potion('health')
 
     expect(potion.name).toBe('health');
-    expect(potion.value).toBe(expect.any(Number));
+    expect(potion.value).toStrictEqual(expect.any(Number));
 });
 
 
